@@ -1,19 +1,20 @@
 body {
-  background: linear-gradient(90deg, black, #220033);
+  background: linear-gradient(90deg, white, #b5faff);
   margin: 0;
   place-items: center;
   padding: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFDD0;
-    font-family: Arial, sans-serif;
+  /*color: #FFFDD0;*/
+  font-family: "Montserrat", sans-serif;
 }
-/*h1 {*/
-/*  color: #FFFDD0;*/
-/*}*/
+h1 {
+  font-family: "Montserrat light", sans-serif;
+  font-size: 50px;
+}
 h2 {
-  font-style: italic;
+  font-family: "Montserrat light", sans-serif, italic;
 }
 hr {
   border-color: #B49FBF;
@@ -35,7 +36,7 @@ hr {
   padding: 0 10%;
   height: 320px;
   max-width: 800px;
-  background: linear-gradient(300deg, #00bfff, #220033, #ef8172);
+  background: linear-gradient(300deg, #00bfff, #220033, #b5faff);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
@@ -79,7 +80,9 @@ img {
         height: auto;
     }
 }
-
+.container p {
+  color: white;
+}
 svg {
   position: relative;
   right: 15%;
@@ -98,15 +101,15 @@ svg {
 p {
   /*margin: 0;*/
   /*padding-bottom: 10px;*/
-  color: #FFFDD0;
+  /*color: #FFFDD0;*/
 }
 
 .box {
   position: fixed;
   bottom: 0;
   right: 0;
-  color: #FFFDD0;
-  transform-origin: 0% 10%;
+  /*color: #FFFDD0;*/
+  transform-origin: 0 10%;
   transform: rotate(-90deg);
   font-size: 15px;
   line-height: 1.4;
