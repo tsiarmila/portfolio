@@ -31,14 +31,14 @@ hr {
   display: grid;
   grid-template-columns: 50% 50%;
   /*grid-column-gap: 10%;*/
-  margin: 30px ;
+  margin: 10px ;
   align-items: center;
   padding: 0 10%;
   height: 320px;
   max-width: 800px;
-  background: linear-gradient(300deg, #00bfff, #808080, #b5faff);
+  /*background: linear-gradient(300deg, #00bfff, #808080, #b5faff);*/
   background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  /*animation: gradient-animation 18s ease infinite;*/
 }
 
 @keyframes gradient-animation {
@@ -59,6 +59,7 @@ hr {
   align-items: center; /* Выравнивание по вертикали */
   height: 300px;
   width: 100%;
+  background-size: contain;
 }
 
 img {
@@ -80,9 +81,9 @@ img {
         height: auto;
     }
 }
-.container p {
-  color: white;
-}
+/*.container p {*/
+/*  color: white;*/
+/*}*/
 svg {
   position: relative;
   right: 15%;
@@ -104,22 +105,22 @@ p {
   /*color: #FFFDD0;*/
 }
 
-.work {
+.skills-container {
   display: inline-block;
   position: relative;
-  right: 5%;
-  width: 45%;
+  /*right: 10%;*/
+  margin: 10px 50px;
 }
 
-.skills {
-  display: inline-block;
-  position: relative;
-  left: 5%;
-  width: 45%;
+.work {
+  margin-bottom: 30px;
 }
 
 .other_skills {
-  /*display: inline-block;*/
+  display: inline-block;
+  position: relative;
+  /*left: 10%;*/
+  margin: 10px 50px;
 }
 .con1 {
   display: flex;
@@ -179,7 +180,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #b5faff;
+  background: linear-gradient(180deg, #b5faff, white);
   color: #0056b3;
   /*padding: 17px;
   text-align: center; /* Выравнивание текста по центру */
