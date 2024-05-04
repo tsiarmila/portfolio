@@ -1,6 +1,5 @@
 body {
   background: #333;
-  /*background: linear-gradient(90deg, white, #b5faff);*/
   margin: 0 0 30px 0;
   place-items: center;
   padding: 2em;
@@ -33,7 +32,7 @@ hr {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-column-gap: 5%;
-  margin: 10px ;
+  margin: 10px;
   align-items: center;
   padding: 0 10%;
   height: 320px;
@@ -44,17 +43,6 @@ hr {
   position: relative;
   overflow: hidden;
 }
-
-/*.container::before {*/
-/*  content: "";*/
-/*  !*background-image: url('your-image-url.jpg'); *!*!*/
-/*  background-size: cover; !* сохраняем пропорции и заполняем контейнер *!*/
-/*  position: absolute; !* абсолютное позиционирование для растягивания *!*/
-/*  top: 0; !* размещаем изображение вверху контейнера *!*/
-/*  left: 0; !* размещаем изображение влево контейнера *!*/
-/*  width: 100%; !* растягиваем изображение на всю ширину контейнера *!*/
-/*  height: 100%; !* растягиваем изображение на всю высоту контейнера *!*/
-/*}*/
 
 @keyframes gradient-animation {
   0% {
@@ -83,6 +71,11 @@ img {
   object-fit: cover;
   margin-right: 20%;
   padding: 10px;
+  border: none;
+}
+
+img:hover {
+  border: solid 1px #B49FBF;
 }
 
 @media screen and (max-width: 767px) {
@@ -119,7 +112,7 @@ p {
 .skills-container {
   display: inline-block;
   position: relative;
-  margin: 10px 50px;
+  margin: 10px 90px;
   text-align: left;
 }
 
@@ -130,7 +123,7 @@ p {
 .other_skills {
   display: inline-block;
   position: relative;
-  margin: 10px 50px;
+  margin: 10px 90px;
   text-align: left;
 }
 .con1 {
