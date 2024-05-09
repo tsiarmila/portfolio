@@ -37,9 +37,6 @@ hr {
   padding: 0 10%;
   height: 320px;
   max-width: 1000px;
-  /*background: linear-gradient(300deg, #00bfff, #808080, #b5faff);*/
-  /*background-size: 180% 180%;*/
-  /*animation: gradient-animation 18s ease infinite;*/
   position: relative;
   overflow: hidden;
 }
