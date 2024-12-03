@@ -145,6 +145,12 @@
             description: "Here are my all-time favorite movies that every woman should watch."
         },
         {
+            url: "https://play.google.com/store/apps/details?id=com.milatsiar.spacewar",
+            imgSrc: "images/SpaceWarGif.gif",
+            imgAlt: "space-war-banner",
+            description: "Android Game Space War <br> Dive into the heart-pounding action of \"Space War\", where your mission is to outlast waves of relentless invaders and become the ultimate space hero! <br> Can you survive the cosmic chaos and achieve the highest score in the galaxy?"
+        },
+        {
             url: "https://tsiarmila.github.io/boiling/",
             imgSrc: "images/bubbles.gif",
             imgAlt: "image-boiling",
@@ -176,7 +182,7 @@
         paragraph.classList.add("paragraph");
 
         const p = document.createElement("p");
-        p.textContent = website.description;
+        p.innerHTML = website.description;
 
         paragraph.appendChild(p);
         link.appendChild(image);
