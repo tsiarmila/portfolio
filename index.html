@@ -1,229 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Mila's Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mila Tsiarskikh — Developer & Creator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #0f0f10;
+      color: #e4e4e7;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .neon-text {
+      color: #00f5d4;
+      text-shadow: 0 0 10px #00f5d4;
+    }
+    .neon-border {
+      box-shadow: 0 0 10px #9b5de5;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
-<body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div class="main-container">
-        <h1>mila tsiarskikh</h1>
-        <h2>developer and creator</h2>
-        <p>email: milatsiar@gmail.com</p>
-        <p>portfolio: tsiarmila/github.io/portfolio</p>
-        <hr>
-        <div class="skills-container">
-        <div class="work">
-            <div><h3>work experience</h3></div>
-            <hr>
-            <div><p>4 years as Developer</p></div>
-            <div><p>2 years as Freelancer</p></div>
-            <div><p>40+ Finished projects</p></div>
-        </div>
+<body class="min-h-screen flex flex-col">
 
-        <div class="skills">
-            <div><h3>common skills</h3></div>
-            <hr>
-            <div><p>Web App</p></div>
-            <div><p>Web Site</p></div>
-            <div><p>Android App</p></div>
-        </div>
-        </div>
+  <!-- Header -->
+  <header class="text-center py-12 border-b border-gray-800">
+    <h1 class="text-4xl md:text-5xl font-bold neon-text">Mila Tsiarskikh</h1>
+    <h2 class="text-lg md:text-xl text-gray-400 mt-2">Developer & Creator</h2>
+    <p class="mt-3 text-gray-500">email: <a href="mailto:milatsiar@gmail.com" class="text-pink-400 hover:text-pink-300">milatsiar@gmail.com</a></p>
+  </header>
 
-        <div class="other_skills">
-            <div><h3>other skills</h3></div>
-            <hr>
-            <div><p>Python ••••••••</p></div>
-            <div><p>HTML  ••••••••</p></div>
-            <div><p>CSS   ••••••••</p></div>
-            <div><p>Java   ••••••••</p></div>
-            <div><p>JavaScript   ••••••••</p></div>
-            <div><p>Version Control   ••••••••</p></div>
-            <div><p>Android   ••••••••</p></div>
-            <div><p>Flask   ••••••••</p></div>
-        </div>
-        <hr>
+  <!-- About -->
+  <section class="max-w-3xl mx-auto text-center px-6 mt-12">
+    <p class="text-gray-400 leading-relaxed">
+      I love building apps and web experiences that make people’s lives easier and more delightful.
+      I’m always learning new tools, exploring creative ideas, and aiming to craft clean, user-friendly solutions.
+    </p>
+  </section>
 
-        <div id="container"></div>
+  <!-- Skills -->
+  <section class="max-w-4xl mx-auto mt-16 px-6">
+    <h3 class="text-2xl font-semibold neon-text mb-6 text-center">Skills</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-4 bg-gray-900 rounded-xl neon-border">Python</div>
+      <div class="p-4 bg-gray-900 rounded-xl neon-border">JavaScript</div>
+      <div class="p-4 bg-gray-900 rounded-xl neon-border">Java / Android</div>
+      <div class="p-4 bg-gray-900 rounded-xl neon-border">HTML / CSS</div>
+      <div class="p-4 bg-gray-900 rounded-xl neon-border">Flask</div>
+      <div class="p-4 bg-gray-900 rounded-xl neon-border">Git / Version Control</div>
+      <div class="p-4 bg-gray-900 rounded-xl neon-border">Web Apps</div>
+      <div class="p-4 bg-gray-900 rounded-xl neon-border">UI Implementation</div>
+    </div>
+  </section>
 
-        <div class="container svg">
-            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 100 100">
-              <defs>
-                <style>
-                  @keyframes rotate {
-                    100% {
-                      transform: rotate(360deg);
-                    }
-                  }
-                  .out-top {
-                    animation: rotate 5s linear infinite;
-                    transform-origin: 13px 25px;
-                  }
-                  .in-top {
-                    animation: rotate 3s linear infinite;
-                    transform-origin: 13px 25px;
-                  }
-                  .out-bottom {
-                      animation: rotate 5s linear infinite;
-                      transform-origin: 84px 93px;
-                  }
-                  .in-bottom {
-                      animation: rotate 3s linear infinite;
-                      transform-origin: 84px 93px;
-                  }
-                </style>
-              </defs>
-              <path fill="#9b5de5" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
-              <path fill="#f15bb5" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
-              <path fill="#00bbf9" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
-              <path fill="#00f5d4" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
-              <circle cx="13.2" cy="25.6" r="1.6" fill="#9b5de5" />
-              <circle cx="84.7" cy="93.3" r="1.7" fill="#00bbf9" />
-            </svg>
-                <div class="paragraph">
-                <p>
-                    I like the coding, challenging, travelling. Ideal position to work with the customers when they satisfied with my job. I have a skill to learn new tools which best fit to solve a particular problem.
-                </p>
-                </div>
-        </div>
+  <!-- Projects -->
+  <section class="max-w-6xl mx-auto mt-20 px-6">
+    <h3 class="text-2xl font-semibold neon-text mb-10 text-center">Projects</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project 1 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition">
+        <a href="https://tsiarmila.github.io/art-gallery/" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/girl_yellow_balls.jpeg" alt="Art Gallery"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-pink-400">Art Gallery</h4>
+        <p class="text-gray-400 text-sm">Showcasing works by Russian artist Andrey Russo. (HTML, CSS, JS, Git)</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
+        <a href="https://blind-ronna-milatsiar.koyeb.app/" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/avatar.png" alt="Avatar Creator"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-cyan-400">Avatar Creator</h4>
+        <p class="text-gray-400 text-sm">Create your own avatar to use on social platforms. (Node, JS, Git)</p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition">
+        <a href="https://tsiarmila.github.io/womens_movies/" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/movies.png" alt="Women's Movies"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-purple-400">Women’s Movies</h4>
+        <p class="text-gray-400 text-sm">Collection of inspiring films made for and by women. (HTML, JavaScript, Git)</p>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
+        <a href="https://play.google.com/store/apps/details?id=com.milatsiar.lazygourmand" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/lazygourmand.png" alt="Lazy Gourmand App"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-cyan-400">Lazy Gourmand</h4>
+        <p class="text-gray-400 text-sm">Android app with delicious recipes for home chefs. (Java, Android)</p>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition">
+        <a href="https://play.google.com/store/apps/details?id=com.milatsiar.thecrazytimes" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/tct_port.png" alt="TheCrazyTimes App"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-pink-400">TheCrazyTimes</h4>
+        <p class="text-gray-400 text-sm">Android news app with weird and fun stories. (Java, Android)</p>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition">
+        <a href="https://tsiarmila.github.io/k705/" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/k705.png" alt="Business page"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-purple-400">Business page</h4>
+        <p class="text-gray-400 text-sm">IT and business project development company. (HTML, CSS, JS, Git)</p>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition">
+        <a href="https://play.google.com/store/apps/details?id=com.milatsiar.spacewar" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/SpaceWarGif.gif" alt="SpaceWar Game"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-purple-400">Space War</h4>
+        <p class="text-gray-400 text-sm">Android game, oldfashion Space Shooter. (Java, Android)</p>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
+        <a href="https://play.google.com/store/apps/details?id=com.milatsiar.quicktapquest" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/qtq_portfolio.gif" alt="Quick Tap Quest Game"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-cyan-400">QTQ - Quick Tap Quest</h4>
+        <p class="text-gray-400 text-sm">Android Quick Tap game. (Java, Android)</p>
+      </div>
+
+      <!-- Project 9 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
+        <a href="https://play.google.com/store/apps/details?id=com.milatsiar.batterylevel" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/batterylevel.jpg" alt="Battery Level App"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-pink-400">App House</h4>
+        <p class="text-gray-400 text-sm">Android app designed for accessibility, relaxation, and convenience. (Java, Android)</p>
+      </div>
+
+      <!-- Project 10 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition">
+        <a href="https://tsiarmila.github.io/kropa_jamnik/" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/jamnik_night_view.jpg" alt="Houses sale"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-pink-400">Page with the sale publication</h4>
+        <p class="text-gray-400 text-sm">Houses for sale in Kropa and Jamnik. (Python, Flask, HTML, CSS, JS, Git)</p>
+      </div>
+
+      <!-- Project 11 -->
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition">
+        <a href="https://tsiarmila.github.io/image-color-analyzer/" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/colors-analyzer.gif" alt="Color Analyzer"
+               class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
+        </a>
+        <h4 class="text-lg font-semibold mb-2 text-purple-400">Color Analyzer</h4>
+        <p class="text-gray-400 text-sm">Find 5 most common colors in your image. (HTML, JavaScript)</p>
+      </div>
 
     </div>
+  </section>
 
-
-    <footer>
-    <div class="con1">
-      <p>myself <i class="f">Mil@ Tsiar </i>check out my profiles</p>
-      <div class="lin-1 l"></div>
-        <div class="b2 con">
-
-        <button class="bo">
-          <i class="fa fa-linkedin">
-          </i>
-          <a href="https://www.linkedin.com/in/liudmila-tsiarskikh-59a45623a/" target="_blank"><div class="bu">LinkedIn</div></a>
-        </button>
-
-        <button class="bo">
-          <i class="fa fa-github">
-          </i>
-          <a href="https://github.com/tsiarmila" target="_blank"><div class="bu">Github</div></a>
-        </button>
-
-        </div>
+  <!-- Footer -->
+  <footer class="mt-20 border-t border-gray-800 py-10 text-center text-gray-500">
+    <p>Connect with me</p>
+    <div class="flex justify-center gap-6 mt-4">
+      <a href="https://www.linkedin.com/in/liudmila-tsiarskikh-59a45623a/" target="_blank" class="text-blue-400 hover:text-blue-300 text-xl">
+        <i class="fa fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/tsiarmila" target="_blank" class="text-gray-300 hover:text-gray-100 text-xl">
+        <i class="fa fa-github"></i> GitHub
+      </a>
     </div>
-</footer>
+    <p class="mt-6 text-sm text-gray-600">© 2025 Mila Tsiarskikh</p>
+  </footer>
+
+  <script src="https://use.fontawesome.com/4ad8cf5dc5.js"></script>
 </body>
-
 </html>
-<script>
-    const websites = [
-        {
-            url: "https://tsiarmila.github.io/art-gallery/",
-            imgSrc: "images/girl_yellow_balls.jpeg",
-            imgAlt: "image-girl-with-yellow-balls",
-            description: "The Art Gallery is representing several works by the famous Russian artist Andrey Ryabchuk, who worked under the pseudonym Andrey Russo. His works were seen in various exhibitions in France and Italy. <br> (HTML, CSS, JavaScript, Git)"
-        },
-        {
-            url: "https://blind-ronna-milatsiar.koyeb.app/",
-            imgSrc: "images/avatar.png",
-            imgAlt: "image-avatar-girl",
-            description: "Create your own cute avatar and use it in a Social Network, Whatsapp, Personal Profile. <br> (Node, HTML, CSS, JavaScript, Git)"
-        },
-        {
-            url: "https://tsiarmila.github.io/womens_movies/",
-            imgSrc: "images/movies.png",
-            imgAlt: "image-womens-movies",
-            description: "Here are my all-time favorite movies that every woman should watch. <br> (HTML, CSS, JavaScript, Git)"
-        },
-        {
-            url: "https://play.google.com/store/apps/details?id=com.milatsiar.lazygourmand",
-            imgSrc: "images/lazygourmand.png",
-            imgAlt: "image-lazy-gourmand-app",
-            description: "Android Application Lazy Gourmand <br> Discover a world of delicious recipes and elevate your cooking experience with our easy-to-use culinary app! Whether you’re a beginner or a seasoned home chef, our app makes it simple to find, save, and cook meals you’ll love <br> (Java, Git, Android) <br> Release on November, 15"
-        },
-        {
-            url: "https://play.google.com/store/apps/details?id=com.milatsiar.thecrazytimes",
-            imgSrc: "images/tct_port.png",
-            imgAlt: "image-the-crazy-times-news-app",
-            description: "Android Application TheCrazyTimes <br> Get your daily dose of delightfully absurd, hilariously twisted, and mind-bogglingly bizarre stories from our reality. <br> (Java, Git, Android)"
-        },
-        {
-            url: "https://tsiarmila.github.io/kropa_jamnik/",
-            imgSrc: "images/jamnik_night_view.jpg",
-            imgAlt: "image-jamnik_night_view",
-            description: "Kropa and Jamnik, Slovenian Pearls.  <br> House for sale in Kropa and Jamnik. <br> (Python, Flask, HTML, CSS, JavaScript, Git)"
-        },
-        {
-            url: "https://tsiarmila.github.io/k705/",
-            imgSrc: "images/k705.png",
-            imgAlt: "image-business-page-of-company-k705",
-            description: "A business page for my client,  <br>an IT and business project development company. <br> (HTML, CSS, JavaScript, Git)"
-        },
-        {
-            url: "https://play.google.com/store/apps/details?id=com.milatsiar.spacewar",
-            imgSrc: "images/SpaceWarGif.gif",
-            imgAlt: "space-war-banner",
-            description: "Android Game Space War <br> Dive into the heart-pounding action of \"Space War\", where your mission is to outlast waves of relentless invaders and become the ultimate space hero! <br> Can you survive the cosmic chaos and achieve the highest score in the galaxy? <br> (Java, Git, Android)"
-        },
-        {
-            url: "https://play.google.com/store/apps/details?id=com.milatsiar.quicktapquest",
-            imgSrc: "images/qtq_portfolio.gif",
-            imgAlt: "qtq-game-banner",
-            description: "Android Game Quick Tap Quest <br> This is a fast-paced and hilariously addictive game. Your mission is simple: within a limited time (like 60 seconds), tap on the pop-up image as many times as you can whenever it pops up on the screen. <br> But be quick! The pop-ups appear and disappear rapidly, challenging your speed and accuracy. Rack up points, set new high scores, and prove you’re the ultimate tapper! <br> (Java, Git, Android)"
-        },
-        {
-            url: "https://play.google.com/store/apps/details?id=com.milatsiar.batterylevel",
-            imgSrc: "images/batterylevel.jpg",
-            imgAlt: "image-app-house-application",
-            description: "Android Application App House – an app designed for accessibility, relaxation, and convenience.<br>I originally developed App House for my visually impaired mother, and now it’s available for everyone who wants better visibility, usability, and sleep quality.<br>🔋 Battery Level Display on Lock Screen<br>⏰ Large Clock on Lock Screen<br>🌿 Nature Sounds for Better Sleep <br> (Java, Git, Android)"
-        },
-        {
-            url: "https://tsiarmila.github.io/image-color-analyzer/",
-            imgSrc: "images/colors-analyzer.gif",
-            imgAlt: "image-color-analyzer-app",
-            description: "Find 5 most common colors in your image. You can find out how the colors fit your own project. <br> (HTML, CSS, JavaScript, Git)"
-        },
-        {
-            url: "https://tsiarmila.github.io/boiling/",
-            imgSrc: "images/bubbles.gif",
-            imgAlt: "image-boiling",
-            description: "With the magical blend of CSS and Javascript, stunning tapestries of web pages are created, where every line of code is a brushstroke of creativity. <br> Together, they sculpt an immersive online experience, transforming mere pixels into captivating designs that dance with interactivity and charm."
-        },
-    ];
-
-    const container = document.getElementById("container");
-
-    websites.forEach(website => {
-        const div = document.createElement("div");
-        div.classList.add("container");
-
-        const link = document.createElement("a");
-        link.href = website.url;
-        link.target = "_blank";
-
-        const image = document.createElement("img");
-        image.src = website.imgSrc;
-        image.alt = website.imgAlt;
-
-        const paragraph = document.createElement("div");
-        paragraph.classList.add("paragraph");
-
-        const p = document.createElement("p");
-        p.innerHTML = website.description;
-
-        paragraph.appendChild(p);
-        link.appendChild(image);
-        div.appendChild(link);
-        div.appendChild(paragraph);
-
-        const hr = document.createElement("hr");
-
-        container.appendChild(div);
-        container.appendChild(hr);
-
-    });
-</script>
