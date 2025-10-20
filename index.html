@@ -185,12 +185,12 @@
 
       <!-- Project 11 -->
       <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition">
-        <a href="#" target="_blank" class="block overflow-hidden rounded-xl">
-          <img src="" alt=""
+        <a href="https://tsiarmila.github.io/Interior-Designer-Portfolio/" target="_blank" class="block overflow-hidden rounded-xl">
+          <img src="images/designer_portfolio.png" alt="landing page for interior designer"
                class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
         </a>
-        <h4 class="text-lg font-semibold mb-2 text-cyan-400">My Next Progect</h4>
-        <p class="text-gray-400 text-sm"></p>
+        <h4 class="text-lg font-semibold mb-2 text-cyan-400">Landing page of Interior Designer</h4>
+        <p class="text-gray-400 text-sm">Showcasing works by Interior Designer Liudmila Viynskovsky. (HTML, CSS, JS, Git)</p>
       </div>
 
     </div>
@@ -205,6 +205,9 @@
       </a>
       <a href="https://github.com/tsiarmila" target="_blank" class="text-gray-300 hover:text-gray-100 text-xl">
         <i class="fa fa-github"></i> GitHub
+      </a>
+      <a id="view-cv" class="text-pink-300 hover:text-pink-100 text-xl">
+        <i class="fa fa-github"></i> Download CV
       </a>
     </div>
     <p class="mt-6 text-sm text-gray-600">© 2025 Mila Tsiarskikh</p>
@@ -242,6 +245,11 @@ window.addEventListener('mousemove', e => {
   mouse.x = e.clientX;
   mouse.y = e.clientY;
 });
+
+document.getElementById('view-cv').addEventListener('click', ()=>{
+      const url = 'https://cdn.jsdelivr.net/gh/tsiarmila/CV@main/CV_Tsiarskikh_m.pdf';
+  window.open(url, '_blank');
+    })
 
 function drawParticles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
