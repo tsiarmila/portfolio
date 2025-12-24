@@ -183,17 +183,17 @@
           <img src="images/SpaceWarGif.gif" alt="SpaceWar Game created by Mila Tsiarskikh"
                class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
         </a>
-        <h4 class="text-lg font-semibold mb-2 text-purple-400">Space War</h4>
+        <h4 class="text-lg font-semibold mb-2 text-pink-400">Space War</h4>
         <p class="text-gray-400 text-sm">Android game, oldfashion Space Shooter. (Java, Android)</p>
       </div>
 
       <!-- Project 8 -->
-      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition">
         <a href="https://play.google.com/store/apps/details?id=com.milatsiar.quicktapquest" target="_blank" class="block overflow-hidden rounded-xl">
           <img src="images/qtq_portfolio.gif" alt="Quick Tap Quest Game created by Mila Tsiarskikh"
                class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
         </a>
-        <h4 class="text-lg font-semibold mb-2 text-cyan-400">QTQ - Quick Tap Quest</h4>
+        <h4 class="text-lg font-semibold mb-2 text-purple-400">QTQ - Quick Tap Quest</h4>
         <p class="text-gray-400 text-sm">Android Quick Tap game. (Java, Android)</p>
       </div>
 
@@ -203,7 +203,7 @@
           <img src="images/batterylevel.jpg" alt="Battery Level App created by Mila Tsiarskikh"
                class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
         </a>
-        <h4 class="text-lg font-semibold mb-2 text-pink-400">App House</h4>
+        <h4 class="text-lg font-semibold mb-2 text-cyan-400">App House</h4>
         <p class="text-gray-400 text-sm">Android app designed for accessibility, relaxation, and convenience. (Java, Android)</p>
       </div>
 
@@ -213,22 +213,22 @@
           <img src="images/jamnik_night_view.jpg" alt="Houses sale webshop created by Mila Tsiarskikh"
                class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
         </a>
-        <h4 class="text-lg font-semibold mb-2 text-pink-400">Page with the sale publication</h4>
+        <h4 class="text-lg font-semibold mb-2 text-purple-400">Page with the sale publication</h4>
         <p class="text-gray-400 text-sm">Houses for sale in Kropa and Jamnik. (Python, Flask, HTML, CSS, JS, Git)</p>
       </div>
 
       <!-- Project 11 -->
-      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition">
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition">
         <a href="https://tsiarmila.github.io/image-color-analyzer/" target="_blank" class="block overflow-hidden rounded-xl">
           <img src="images/colors-analyzer.gif" alt="Color Analyzer web app created by Mila Tsiarskikh"
                class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
         </a>
-        <h4 class="text-lg font-semibold mb-2 text-purple-400">Color Analyzer</h4>
+        <h4 class="text-lg font-semibold mb-2 text-pink-400">Color Analyzer</h4>
         <p class="text-gray-400 text-sm">Find 5 most common colors in your image. (HTML, JavaScript)</p>
       </div>
 
       <!-- Project 11 -->
-      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition">
+      <div class="project-card bg-gray-900 p-4 rounded-2xl shadow-lg hover:shadow-cyan-500/30 transition">
         <a href="https://tsiarmila.github.io/Interior-Designer-Portfolio/" target="_blank" class="block overflow-hidden rounded-xl">
           <img src="images/designer_portfolio.png" alt="landing page for interior designer created by Mila Tsiarskikh"
                class="rounded-xl mb-3 w-full object-contain bg-gray-800 transition-transform duration-300 hover:scale-105">
@@ -290,10 +290,15 @@ window.addEventListener('mousemove', e => {
   mouse.y = e.clientY;
 });
 
-document.getElementById('view-cv').addEventListener('click', ()=>{
-      const url = 'https://cdn.jsdelivr.net/gh/tsiarmila/CV@main/CV_Tsiarskikh_m.pdf';
-  window.open(url, '_blank');
-    })
+const cvBtn = document.getElementById('view-cv');
+if (cvBtn) {
+  cvBtn.addEventListener('click', () => {
+    window.open(
+      'https://cdn.jsdelivr.net/gh/tsiarmila/CV@main/CV_Tsiarskikh_m.pdf',
+      '_blank'
+    );
+  });
+}
 
 function drawParticles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
